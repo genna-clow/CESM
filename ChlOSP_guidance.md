@@ -4,7 +4,12 @@ This documents outlines the steps needed to run a fully-coupled, pre-industrial 
 Run the following commands: 
   1. `git clone -b cesm2.2.0_satchl https://github.com/genna-clow/CESM.git cesm_chlosp` </br>
   2. `cd cesm_chlosp` </br>
-  3. `./manage_externals/checkout_externals` </br> 
+  3. `./manage_externals/checkout_externals` </br>
+
+  The `checkout_externals` command pulls code from the component repositories, which are listed in **Externals.cfg**. Repositories that have been modified for ChlOSP are listed here: 
+  1. https://github.com/genna-clow/CAM/tree/satellite_chl
+  2. https://github.com/genna-clow/cime/tree/satellite_chl
+  3. https://github.com/genna-clow/POP2-CESM/tree/satellite_chl
 
 **Step 2: Create new case** </br>
   1. `cd cime/scripts`
